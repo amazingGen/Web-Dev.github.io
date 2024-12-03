@@ -1,0 +1,179 @@
+body {
+    display: block;
+    justify-content: center;
+    background-image: url(blurBg.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    
+}
+
+.headerOne{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hBut {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hBut:hover {
+    color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start;
+    }
+
+    .headerOne, .headerTwo {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Make each section take full width */
+        margin-bottom: 10px; /* Add space between sections */
+    }
+
+    .hBut {
+        width: 100%; /* Make buttons take full width */
+        margin: 5px 0; /* Reduce margin between buttons */
+        text-align: center; /* Center text inside the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .hBut {
+        font-size: 14px; /* Reduce font size on smaller screens */
+    }
+}
+
+
+.collection {
+    height: 40px;
+    width: 100%; /* Ensure it spans the entire width */
+    display: inline-block;
+    border-bottom-style: solid;
+    background-color:transparent
+}
+
+.col {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+
+.collection {
+    height: 40px;
+    width: 100%;
+    display: block; /* Set to block for full width */
+    border-bottom-style: solid;
+    background-color: rgb(201, 201, 201);
+}
+
+.col {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+
+
+
+/* Gallery container setup with CSS Grid for responsiveness */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates flexible columns */
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+/* Styling for individual art sections */
+.arts1, .arts2, .arts3, .arts4, .arts5, .arts6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.madonna{
+    height: 300px;
+    width: 250px;
+}
+
+
+.but {
+    margin-top: -10px;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    border: transparent;
+    transition: 0.2s;
+}
+
+.but:hover {
+    transform: scale(1.1);
+    color: rgb(158, 8, 8);
+}
+
+button p {
+    font-size: 14px;
+}
+
+.but strong {
+    font-size: 16px;
+    display: block;
+}
+
+/* Media Queries to handle responsiveness */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust to 2 or 3 columns for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Single column layout for smaller screens */
+    }
+
+    button p {
+        font-size: 12px; /* Adjust text size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Stack items vertically on very small screens */
+    }
+
+    button p {
+        font-size: 10px; /* Further adjust text size */
+    }
+}

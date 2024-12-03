@@ -1,0 +1,256 @@
+/* Base Styles */
+body {
+    display: block;
+    justify-content: center;
+    background-image: url(blurBg.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    
+}
+
+.headerOne{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hBut {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hBut:hover {
+    color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .headerOne {
+        flex-direction: column; 
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .hBut {
+        width: 100%; 
+        margin: 5px 0;
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hBut {
+        font-size: 14px; 
+    }
+}
+
+.getIn {
+    width: 90%;
+    max-width: 850px;
+    margin: 20px auto;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+h2{
+    text-align: center;
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.name, .phone {
+    flex: 1; 
+    border-bottom: 2px solid black;
+    margin-bottom: 0; 
+}
+
+.email, .message {
+    border-bottom: 2px solid black;
+    width: 100%; 
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input[type="text"] {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: transparent; 
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 35px;
+    width: 100px;
+}
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 35px;
+    width: 100px;
+}
+
+
+.submit:hover {
+    transform: scale(1.1);
+}
+
+.visitUs, .emailUs, .callUs{
+    margin-left: 100px;
+    margin-bottom: 30px;
+    
+}
+
+.icon-text {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.icon-text i {
+    font-size: 24px; 
+    color: black; 
+}
+
+.icon-text h3 {
+    font-size: 18px; /* Adjust text size */
+    margin: 0px; 
+    color: black; 
+}
+
+
+.footer {
+    background-color: transparent;
+    border-top: 3px solid black; 
+    padding: 20px 10px; 
+    text-align: center;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icons i {
+    font-size: 24px; 
+    color: black; 
+    margin-right: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: black;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerOne, .headerTwo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .getIn, .callUs, .visitUs, .emailUs {
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h2, h3 {
+        font-size: 18px;
+    }
+
+    .number {
+        font-size: 16px;
+    }
+
+    .hBut {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+
+
+

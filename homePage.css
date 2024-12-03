@@ -1,0 +1,135 @@
+body {
+    display: block;
+    justify-content: center;
+    background-image: url(homePageBG.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    
+}
+
+.headerOne{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hBut {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hBut:hover {
+    color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: flex-start;
+    }
+
+    .headerOne, .headerTwo {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%; /* Make each section take full width */
+        margin-bottom: 10px; /* Add space between sections */
+    }
+
+    .hBut {
+        width: 100%; /* Make buttons take full width */
+        margin: 5px 0; /* Reduce margin between buttons */
+        text-align: center; /* Center text inside the button */
+    }
+}
+
+@media (max-width: 480px) {
+    .hBut {
+        font-size: 14px; /* Reduce font size on smaller screens */
+    }
+}
+
+
+.title {
+    
+    width: 90%; /* Make title responsive */
+    max-width: 700px; /* Limit max width */
+    text-align: center;
+    margin: 100px auto; /* Center title */
+    font-size: 1.5rem; /* Use relative font size */
+  
+}
+
+h3 {
+    margin-top: -30px;
+}
+
+.viewMore {
+    margin: -90px auto;
+    display: block;
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+    border-radius: 90px;
+    border-style: solid;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    line-height: 40px;
+}
+
+.viewMore:hover {
+    transform: scale(1.10);
+    
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header items vertically */
+        height: auto; /* Adjust height */
+    }
+
+    .headerOne, .headerTwo {
+        width: 100%; /* Full width for smaller screens */
+        margin: 5px 0;
+    }
+
+    .title {
+        font-size: 1.2rem; /* Reduce font size */
+        margin-top: 50px;
+    }
+
+    .viewMore {
+        width: 120px; /* Reduce button size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1rem; /* Further reduce font size */
+    }
+
+    .viewMore {
+        width: 100px; /* Smaller button */
+    }
+}
